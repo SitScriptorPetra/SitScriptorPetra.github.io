@@ -1,5 +1,5 @@
-## Sit Scriptor Petra
-# Sistema de Información de Música y Bandas de Rock
+# Sit Scriptor Petra
+## Sistema de Información de Música y Bandas de Rock
 
 Una estación de Radio está interesada en la creación de un Sistema de Información con Interfaz Web que permita organizar la información de los músicos y bandas favoritos de Rock. Esta información incluye datos de los artistas, bandas, canciones, álbumes y tablaturas de canciones, que es un formato para anotar la música para tocar guitarra y otros instrumentos. La intención es que los conductores de la estación puedan recurrir al sistema por si desean citar información al aire sobre artistas, canciones, álbumes.
 Hasta ahora se tiene noción de la siguiente información:
