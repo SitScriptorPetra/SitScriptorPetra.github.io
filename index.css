@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+
+.title {
+  font-family:'Roboto';
+  font-weight:300;
+  font-size:5rem;
+  padding-top:3rem;
+  text-align: center;
+  overflow:hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+.navbar{
+    background-color: #17A589 ;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.nav-link{
+    background-color: whitesmoke;
+    color: #111;
+    height: 50px;
+    text-align: center;
+    margin: 10px;
+}
+
+.parte-1{
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.parte-1 {
+  animation: showup 7s infinite;
+}
+
+.parte-1{
+  width:0px;
+  animation: reveal 7s infinite;
+}
+
+.parte-2 {
+  margin-left:20px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { opacity: 0; margin-left:-5em; }
+    20% {opacity: 1; margin-left:-5em; }
+    35% { margin-left:0px; }
+    80% { opacity: 1 }
+    100% { opacity: 0; margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:6em;}
+    80% {opacity:1;}
+    100% {opacity:0;width:13em;}
+}
+
+
+/*Side Panel*/
+
+.sidepanel {
+    height: 500px; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x:hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  }
+
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+
+  .openbtn:hover {
+    background-color: #444;
+  }
+
+  /*Contenido*/
+
+  .contenido{
+      position: relative;
+      background-color: whitesmoke;
+      width: 96%;
+      margin: auto;
+      box-shadow: #818181;
+  }
+
+  footer{
+      align-self: flex-end;
+      background-color: black;
+      color: white;
+      left: 0px;
+    width: 100%;
+    text-align: center;
+    height: 80px;
+  }

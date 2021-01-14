@@ -2,42 +2,60 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
-		<title>Sit Scriptor Petra</title>
+		<title>ADOO 2CM7</title>
 		<meta name="description" content="Proyecto ADOO">
 		<meta name="author" content="Alexis">
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="index.css">
+		<script src="index.js"></script>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg ">
 		  <!--<a class="navbar-brand" href="#">Mi Titan</a> -->
-		  <button class="btn btn-outline-success" type="button" @onClick="funcionn()">Ver Proyecto</button>
+		  <!--<button class="btn btn-outline-success" type="button" @onClick="funcionn()">Ver Proyecto</button>-->
+
+		<div id="mySidepanel" class="sidepanel">
+			<a href="javascript:void(0)" class="closebtn"
+				onclick="closeNav()">&times;</a>
+			<a href="#">Gestion del proyeto</a>
+			<a href="#">Modelado del negocio</a>
+			<a href="#">Requisitos</a>
+			<a href="#">Analis y diseño</a>
+			<a href="#">Implementacion</a>
+		</div>
+		<button class="openbtn" onclick="openNav()">&#9776; Menu deslisable</button>
+
+
 
 		  <div class="collapse navbar-collapse">
 		    <ul class="navbar-nav mr-auto">
 		      <li class="nav-item active">
 		        <a class="nav-link" href="./index.html">Inicio <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="https://github.com/SitScriptorPetra/SitScriptorPetra.github.io">Github</a>
-		      </li>
-		      <li class="nav-item dropdown">
+			  </li>
+			  
+			  <img src="">
+		      <!-- <li class="nav-item dropdown">
 
-		       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+		      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
           Categorias
-        </a>
+		</a>
+		
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="views/candados.html">Especificacion de requerimientos</a>
           <a class="dropdown-item" href="views/chiceros.html">Reglas negocio</a>
           <a class="dropdown-item" href="views/viejitos.html">Casos de uso</a>
           <a class="dropdown-item" href="#">Modelo de dominio</a>
-        </div>
+		</div>
+		
 
-		      </li>
+		      </li>-->
 		    </ul>
 		  </div>
 		</nav>
 		<!--Final del Navigation bar-->
+
+		<!--
 		<div class="container">
 			<div class="title">
 				<div class="parte-1">Sit</div> 
@@ -45,19 +63,46 @@
 					  <span class="revelar">Scriptor Petra</span>
 					</div>
 			</div>
+		
 			<nav>
 				<p><a href="./index.html">Inicio</a></p>
 			</nav>
+		-->
 			<div class="contenido">
 
-				<h3>Descripcion</h3>
+				<h3>Analisis y diseño orientado a objetos</h3>
 				<div id="descripcion">
 					<div id="vision">
+					<h4>Vision</h4>
 					<p>Para una estaci&oacute;n de radio, que necesite una aplicaci&oacute;n que apoye a los conductores a consultar los datos de artistas y canciones de rock, el Sit Scriptor Petra es un catalogo de informaci&oacute;n musical de rock.</p>
 					<p>A diferencia de otros sistemas, nuestro producto esta enfocado directamente a las necesidades de una estaci&oacute;n de radio.</p>
 					</div>
-					<div id="perspectiva">
 					
+
+					<h4>Equipo de desarrollo</h4>
+
+					<h4>Introduccion</h4>
+					<p>
+						afasdfsa
+						afasdfsasad<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						
+					</p>
+					<div id="perspectiva">
 					</div>
 					<div id="funciones">
 					</div>
@@ -76,7 +121,7 @@
 				</div>
 			</div>
 			<footer>
-				<p>&copy; Copyright by Sultanes del juego</p>
+				2020-ESCOM IPN
 			</footer>
 			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -84,63 +129,3 @@
 		</div>
 	</body>
 </html>
-
-<style>
-    @import url('https://fonts.googleapis.com/css?family=Roboto:300');
-
-    .title {
-      font-family:'Roboto';
-      font-weight:300;
-      font-size:5rem;
-      padding-top:3rem;
-      text-align: center;
-      overflow:hidden;
-      -webkit-backface-visibility: hidden;
-      -webkit-transform: translate3d(0,0,0);
-    }
-    
-    .parte-1{
-      display:inline-block;
-      overflow:hidden;
-      white-space:nowrap;
-    }
-    
-    .parte-1 {
-      animation: showup 7s infinite;
-    }
-
-	.parte-1{
-      width:0px;
-      animation: reveal 7s infinite;
-    }
-    
-    .parte-2 {
-      margin-left:20px;
-      animation: slidein 7s infinite;
-    }
-    
-    @keyframes showup {
-        0% {opacity:0;}
-        20% {opacity:1;}
-        80% {opacity:1;}
-        100% {opacity:0;}
-    }
-    
-    @keyframes slidein {
-        0% { opacity: 0; margin-left:-5em; }
-        20% {opacity: 1; margin-left:-5em; }
-        35% { margin-left:0px; }
-        80% { opacity: 1 }
-        100% { opacity: 0; margin-left:0px; }
-    }
-    
-    @keyframes reveal {
-        0% {opacity:0;width:0px;}
-        20% {opacity:1;width:0px;}
-        30% {width:6em;}
-        80% {opacity:1;}
-        100% {opacity:0;width:13em;}
-    }
-    
-    
-</style>
