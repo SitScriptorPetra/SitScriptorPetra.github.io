@@ -103,8 +103,15 @@ nav ul ul ul li{
     padding-left: 30px;
     width: 100%;
   }
+
+  /*Esconde las listas*/
   .show + a, ul{
     display: none;
+  }
+  
+
+  .show ul[id="holi"]{
+    visibility: visible;
   }
   nav ul li,nav ul ul li{
     display: block;
@@ -161,28 +168,51 @@ nav ul ul ul li{
   span.cancel:before{
     content: '\f00d';
   }
+
+  .content{
+    visibility: visible;
+  }
+
+
+  .contenido ul{
+    display: contents;
+    
+  }
 }
-.content{
-  z-index: -1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-}
+
 
 
 
 /*Termina nav bar*/
 
 
+/*Contenido de la pagina*/
 
-header{
+#imagen{
+  margin: 0px;
+  width: 100%;
+}
+
+.contenido{
+  
+  
+  
+}
+
+/*header{
     font-size: 35px;
     font-weight: 600;
     padding: 10px 0;
-  }
-  p{
-    font-size: 30px;
-    font-weight: 500;
-  }
+  }*/
+p, ul li{
+    font-size: 15px;
+    text-align: center;
+    text-align: justify;
+    margin: 0px 100px;
+}
+
+h3{
+  text-align: center;
+  font-size: 20px;
+}
+ 
