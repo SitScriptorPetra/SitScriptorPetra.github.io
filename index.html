@@ -1,131 +1,70 @@
 <!DOCTYPE html>
-<html lang="es">
-	<head>
-		<meta charset="utf-8">
-		<title>ADOO 2CM7</title>
-		<meta name="description" content="Proyecto ADOO">
-		<meta name="author" content="Alexis">
-		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<link rel="stylesheet" href="index.css">
-		<script src="index.js"></script>
-	</head>
-	<body>
-		<nav class="navbar navbar-expand-lg ">
-		  <!--<a class="navbar-brand" href="#">Mi Titan</a> -->
-		  <!--<button class="btn btn-outline-success" type="button" @onClick="funcionn()">Ver Proyecto</button>-->
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <!-- <title>Responsive Drop-down Menu Bar</title> -->
+      <link rel="stylesheet" href="index.css">
+      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <nav>
+         <div class="logo">
+            DorPlay
+         </div>
+         <label for="btn" class="icon">
+         <span class="fa fa-bars"></span>
+         </label>
+         <input type="checkbox" id="btn">
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Descripcion</a></li>
+            <li>
+               <label for="btn-1" class="show">El proyecto +</label>
+               <a href="#">El proyecto</a>
+               <input type="checkbox" id="btn-1">
+               <ul>
+                  <li><a href="#">StakeHolders</a></li>
+      
+                  <li><a href="#">Requerimientos</a></li>
+                  <li><a href="#">Reglas del negocio</a></li>
+               </ul>
+            </li>
+            <li>
+               <label for="btn-2" class="show">Modelos +</label>
+               <a href="#">Modelos</a>
+               <input type="checkbox" id="btn-2">
+               <ul>
+                  <li><a href="#">Modelo de casos</a></li>
+                  <li><a href="#">Modelos del Negocio</a></li>
+                  <li><a href="#">Modelos de Dominio</a></li>
+                  <!--<li>
+                     <label for="btn-3" class="show">More +</label>
+                     <a href="#">More <span class="fa fa-plus"></span></a>
+                     <input type="checkbox" id="btn-3">
+                     <ul>
+                        <li><a href="#">Submenu-1</a></li>
+                        <li><a href="#">Submenu-2</a></li>
+                        <li><a href="#">Submenu-3</a></li>
+                     </ul>
+                  </li>-->
+               </ul>
+            </li>
+            <li><a href="#">Planificacion</a></li>
+            <li><a href="#">Contacto</a></li>
+         </ul>
+      </nav>
 
-		<div id="mySidepanel" class="sidepanel">
-			<a href="javascript:void(0)" class="closebtn"
-				onclick="closeNav()">&times;</a>
-			<a href="#">Gestion del proyeto</a>
-			<a href="#">Modelado del negocio</a>
-			<a href="#">Requisitos</a>
-			<a href="#">Analis y diseño</a>
-			<a href="#">Implementacion</a>
-		</div>
-		<button class="openbtn" onclick="openNav()">&#9776; Menu deslisable</button>
-
-
-
-		  <div class="collapse navbar-collapse">
-		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="./index.html">Inicio <span class="sr-only">(current)</span></a>
-			  </li>
-			  
-			  <img src="">
-		      <!-- <li class="nav-item dropdown">
-
-		      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-          Categorias
-		</a>
-		
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="views/candados.html">Especificacion de requerimientos</a>
-          <a class="dropdown-item" href="views/chiceros.html">Reglas negocio</a>
-          <a class="dropdown-item" href="views/viejitos.html">Casos de uso</a>
-          <a class="dropdown-item" href="#">Modelo de dominio</a>
-		</div>
-		
-
-		      </li>-->
-		    </ul>
-		  </div>
-		</nav>
-		<!--Final del Navigation bar-->
-
-		<!--
-		<div class="container">
-			<div class="title">
-				<div class="parte-1">Sit</div> 
-					<div class="parte-2"> 
-					  <span class="revelar">Scriptor Petra</span>
-					</div>
-			</div>
-		
-			<nav>
-				<p><a href="./index.html">Inicio</a></p>
-			</nav>
-		-->
-			<div class="contenido">
-
-				<h3>Analisis y diseño orientado a objetos</h3>
-				<div id="descripcion">
-					<div id="vision">
-					<h4>Vision</h4>
-					<p>Para una estaci&oacute;n de radio, que necesite una aplicaci&oacute;n que apoye a los conductores a consultar los datos de artistas y canciones de rock, el Sit Scriptor Petra es un catalogo de informaci&oacute;n musical de rock.</p>
-					<p>A diferencia de otros sistemas, nuestro producto esta enfocado directamente a las necesidades de una estaci&oacute;n de radio.</p>
-					</div>
-					
-
-					<h4>Equipo de desarrollo</h4>
-
-					<h4>Introduccion</h4>
-					<p>
-						afasdfsa
-						afasdfsasad<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						
-					</p>
-					<div id="perspectiva">
-					</div>
-					<div id="funciones">
-					</div>
-				</div>
-				<div id="objetivos">
-					
-				</div>
-				<div id="stakeholders">
-					
-				</div>
-				<div id="modeloDesarrollo">
-					
-				</div>
-				<div id="herramientasSoftware">
-					
-				</div>
-			</div>
-			<footer>
-				2020-ESCOM IPN
-			</footer>
-			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		</div>
-	</body>
+      <div class="content">
+         <header>Analisis y diseño orientado a objetos</header>
+         
+      </div>
+      <script>
+         $('.icon').click(function(){
+           $('span').toggleClass("cancel");
+         });
+      </script>
+   </body>
 </html>

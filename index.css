@@ -1,150 +1,188 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300');
-
-
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 body{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    min-height: 100vh;
-    flex-wrap: wrap;
+  background: #f2f2f2;
 }
 
-
-.title {
-  font-family:'Roboto';
-  font-weight:300;
-  font-size:5rem;
-  padding-top:3rem;
-  text-align: center;
-  overflow:hidden;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translate3d(0,0,0);
+/*Inicia nav bar*/
+nav{
+  background: #1b1b1b;
 }
-
-.navbar{
-    background-color: #17A589 ;
-    align-items: flex-start;
-    flex-wrap: nowrap;
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+nav .logo{
+  float: left;
+  color: white;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 70px;
+  padding-left: 60px;
+}
+nav ul{
+  float: right;
+  margin-right: 40px;
+  list-style: none;
+  position: relative;
+}
+nav ul li{
+  float: left;
+  display: inline-block;
+  background: #1b1b1b;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+nav ul li a:hover{
+  color: cyan;
+  border-radius: 5px;
+  box-shadow:  0 0 5px #33ffff,
+               0 0 10px #66ffff;
+}
+nav ul ul li a:hover{
+  box-shadow: none;
+}
+nav ul ul{
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid cyan;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
+.show,.icon,input{
+  display: none;
+}
+.fa-plus{
+  font-size: 15px;
+  margin-left: 40px;
+}
+@media all and (max-width: 968px) {
+  nav ul{
+    margin-right: 0px;
+    float: left;
+  }
+  nav .logo{
+    padding-left: 30px;
     width: 100%;
-}
-
-.nav-link{
-    background-color: whitesmoke;
-    color: #111;
-    height: 50px;
-    text-align: center;
-    margin: 10px;
-}
-
-.parte-1{
-  display:inline-block;
-  overflow:hidden;
-  white-space:nowrap;
-}
-
-.parte-1 {
-  animation: showup 7s infinite;
-}
-
-.parte-1{
-  width:0px;
-  animation: reveal 7s infinite;
-}
-
-.parte-2 {
-  margin-left:20px;
-  animation: slidein 7s infinite;
-}
-
-@keyframes showup {
-    0% {opacity:0;}
-    20% {opacity:1;}
-    80% {opacity:1;}
-    100% {opacity:0;}
-}
-
-@keyframes slidein {
-    0% { opacity: 0; margin-left:-5em; }
-    20% {opacity: 1; margin-left:-5em; }
-    35% { margin-left:0px; }
-    80% { opacity: 1 }
-    100% { opacity: 0; margin-left:0px; }
-}
-
-@keyframes reveal {
-    0% {opacity:0;width:0px;}
-    20% {opacity:1;width:0px;}
-    30% {width:6em;}
-    80% {opacity:1;}
-    100% {opacity:0;width:13em;}
-}
-
-
-/*Side Panel*/
-
-.sidepanel {
-    height: 500px; /* Specify a height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: #111; /* Black*/
-    overflow-x:hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
   }
-
-  .sidepanel a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+  .show + a, ul{
+    display: none;
+  }
+  nav ul li,nav ul ul li{
     display: block;
-    transition: 0.3s;
+    width: 100%;
   }
-
-  .sidepanel a:hover {
-    color: #f1f1f1;
+  nav ul li a:hover{
+    box-shadow: none;
   }
-
-  .sidepanel .closebtn {
+  .show{
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show:hover{
+    color: cyan;
+  }
+  .icon{
+    display: block;
+    color: white;
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-
-  .openbtn {
-    font-size: 20px;
+    right: 40px;
+    line-height: 70px;
     cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 10px 15px;
-    border: none;
+    font-size: 25px;
   }
-
-  .openbtn:hover {
-    background-color: #444;
+  nav ul ul{
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
   }
-
-  /*Contenido*/
-
-  .contenido{
-      position: relative;
-      background-color: whitesmoke;
-      width: 96%;
-      margin: auto;
-      box-shadow: #818181;
+  nav ul ul a{
+    padding-left: 40px;
   }
+  nav ul ul ul a{
+    padding-left: 80px;
+  }
+  nav ul ul ul li{
+    position: static;
+  }
+  [id^=btn]:checked + ul{
+    display: block;
+  }
+  nav ul ul li{
+    border-bottom: 0px;
+  }
+  span.cancel:before{
+    content: '\f00d';
+  }
+}
+.content{
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
 
-  footer{
-      align-self: flex-end;
-      background-color: black;
-      color: white;
-      left: 0px;
-    width: 100%;
-    text-align: center;
-    height: 80px;
+
+
+/*Termina nav bar*/
+
+
+
+header{
+    font-size: 35px;
+    font-weight: 600;
+    padding: 10px 0;
+  }
+  p{
+    font-size: 30px;
+    font-weight: 500;
   }
