@@ -69,61 +69,145 @@
            <!--<li><a href="#">Contacto</a></li>-->
          </ul>
       </nav>
-      
+      <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
       <div class="contenido" id="contenido">
+         <div class="title">
+				<div class="parte-1">Dor</div> 
+					<div class="parte-2"> 
+                 <span class="revelar">Play</span>
+               </div>
+               
+			</div>
+         <div id="next">
+                    <!--Imagen-->
 
-         <img id="imagen" src="img/1.jpg">
 
-         <!--Imagen-->
-         <h3>Descripcion general de la pagina</h3>
-         <p>
-            El presente sitio web contiene toda la documentacion, iteraciones y
-            artefactos de software que fueron desarrollados a lo largo del semesetre 
-            en en curso en la materia de Analisis y Diseño Orientado a Objetos (ADOO)
-            Esta página busca mostrar de manera ordenada la documentacion de nustro proyecto 
-            "Sistema de administracion musical DorPlay"
-         </p>
+            <div id="par">
+               <h3>Descripcion general de la pagina</h3>
+               <p id="p1">
+                  El presente sitio web contiene toda la documentacion, iteraciones y
+                  artefactos de software que fueron desarrollados a lo largo del semesetre 
+                  en en curso en la materia de Analisis y Diseño Orientado a Objetos (ADOO)
+                  Esta página busca mostrar de manera ordenada la documentacion de nustro proyecto 
+                  "Sistema de administracion musical DorPlay"
+               </p>
+      
+               <h3>Equipo de desarrollo</h3>
+      
+               
+                  <ul >
+                     <li>Martinez Rodriguez Alejandro</li>
+                     <li>Charis Deveze Aldo</li>
+                     <li>Fernández García Alexis</li>
+                     <li>Flores Ponce Alan Marcelo</li>
+                     <li>Pérez Cariño Carolina</li>
+                     <li>Sánchez Espinosa Iván David</li>
+                  </ul>
+            </div>
 
-         <h3>Equipo de desarrollo</h3>
 
-         
-            <ul >
-               <li>Martinez Rodriguez Alejandro</li>
-               <li>Charis Deveze Aldo</li>
-               <li>Fernández García Alexis</li>
-               <li>Flores Ponce Alan Marcelo</li>
-               <li>Pérez Cariño Carolina</li>
-               <li>Sánchez Espinosa Iván David</li>
-            </ul>
-
-          <h3>Resumen</h3>
-          <!--Servicios de streaming-->
-          <p>
-            Las emisoras de radio con el paso de los años han presentado cientos de canciones
-            al aire, por lo que siempre se busca no solo poder poner diferentes tipos de canciones
-            de acuerdo a la epoca, celebraciones o a consideraciones del locutor en turno, sino que
-            siempre se quiere hablar un poco mas hacerca de la cancion, en especial cuando estas son nuevas
-            ya que entre mas informacion puedan contar de esta, mas narrativa podra ver al aire.
-            Ademas, las locutoras de radio comienzan a tener bancos de canciones cada dia mas grandes y masivos
-            por lo que si se quiere aguilizar la busqueda de alguna cancion o poder visualizar las canciones de acuerdo
-            a un criterio de busqueda, es mas combeniente si un sistema hace estos trabajos de manera autonoma,
-            ahorrando tiempo asi como mejorar la porductividad.
-         <p>
-         <br>
-         <p>
-            Nuestro sitio web llamado Dorplay se enfoca en ser un medio potente de busqueda de musica, capaz de mostrarla de manera limpia
-            e intutiva la informacion hacerca de albumes, canciones, artistas, bandas, etc. En especial de la musica rock.
-            Siendo una alternativa ideal para busquedas rapidas on demand, como las que se hacen las emisoras de radio.
-         
-         <p>
-n
+         <div id="impar">
+            <h3>Resumen</h3>
+            <!--Servicios de streaming-->
+            <p id="p2">
+              Las emisoras de radio con el paso de los años han presentado cientos de canciones
+              al aire, por lo que siempre se busca no solo poder poner diferentes tipos de canciones
+              de acuerdo a la epoca, celebraciones o a consideraciones del locutor en turno, sino que
+              siempre se quiere hablar un poco mas hacerca de la cancion, en especial cuando estas son nuevas
+              ya que entre mas informacion puedan contar de esta, mas narrativa podra ver al aire.
+              Ademas, las locutoras de radio comienzan a tener bancos de canciones cada dia mas grandes y masivos
+              por lo que si se quiere aguilizar la busqueda de alguna cancion o poder visualizar las canciones de acuerdo
+              a un criterio de busqueda, es mas combeniente si un sistema hace estos trabajos de manera autonoma,
+              ahorrando tiempo asi como mejorar la porductividad.
+           <p>
+           <br>
+           <p>
+              Nuestro sitio web llamado Dorplay se enfoca en ser un medio potente de busqueda de musica, capaz de mostrarla de manera limpia
+              e intutiva la informacion hacerca de albumes, canciones, artistas, bandas, etc. En especial de la musica rock.
+              Siendo una alternativa ideal para busquedas rapidas on demand, como las que se hacen las emisoras de radio.
+           
+           <p>
+         </div>
+          
       </div>
+
+
       <footer>
+
       </footer>
+
+
       <script>
          $('.icon').click(function(){
            $('span').toggleClass("cancel");
          });
       </script>
+         </div>
+
+ 
    </body>
 </html>
+
+<style>
+   @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+   .title {
+     font-family:'Roboto';
+     font-weight:300;
+     font-size:5rem;
+     padding-top:150px;
+     text-align: center;
+     overflow:hidden;
+     -webkit-backface-visibility: hidden;
+     -webkit-transform: translate3d(0,0,0);
+     position: relative;
+     height: 600px;
+     background-image: url("img/1.jpg");
+     color: white;
+   }
+   
+   .parte-1{
+     display:inline-block;
+     overflow:hidden;
+     white-space:nowrap;
+   }
+   
+   .parte-1 {
+     animation: showup 7s infinite;
+   }
+
+  .parte-1{
+     width:0px;
+     animation: reveal 7s infinite;
+   }
+   
+   .parte-2 {
+     margin-left:20px;
+     animation: slidein 7s infinite;
+   }
+   
+   @keyframes showup {
+       0% {opacity:0;}
+       20% {opacity:1;}
+       80% {opacity:1;}
+       100% {opacity:0;}
+   }
+   
+   @keyframes slidein {
+       0% { opacity: 0; margin-left:-5em; }
+       20% {opacity: 1; margin-left:-5em; }
+       35% { margin-left:0px; }
+       80% { opacity: 1 }
+       100% { opacity: 0; margin-left:0px; }
+   }
+   
+   @keyframes reveal {
+       0% {opacity:0;width:0px;}
+       20% {opacity:1;width:0px;}
+       30% {width:6em;}
+       80% {opacity:1;}
+       100% {opacity:0;width:13em;}
+   }
+   
+   
+</style>
